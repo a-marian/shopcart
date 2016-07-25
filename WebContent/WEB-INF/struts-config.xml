@@ -1,0 +1,16 @@
+<struts-config>
+    <!-- ========== Form Bean Definitions ================================== -->
+    <form-beans>
+        <form-bean name="ajaxForm" type="shopcart.AjaxForm"/>
+    </form-beans>
+    <!-- ========== Action Mapping Definitions ============================= -->
+    <action-mappings>
+        <action name="ajaxForm" path="/AjaxSubmit" input="/Ajax.jsp"
+        type="shopcart.AjaxAction"/>
+    </action-mappings>
+    
+    <action-mappings>
+    	<action path="/enquiry" 
+    		type="shopcart.action.SearchEngineAction" />
+    </action-mappings>
+</struts-config>
